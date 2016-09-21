@@ -1,0 +1,118 @@
+Study,"Random sequence generation (L, H, U)","Allocation concealment (L, H, U)","Blinding of participants and personnel (L, H, U)","Blinding of oUtcome assessement (L, H, U)","Incomplete oUtcome data (L, H, U)","Selective reporting (L, H, U)","Other soUrces of bias (L, H, U)",final_score
+"Papakostas et al,2012",L,L,L,L,L,L,L,0
+"Binneman, ‎2008",L,L,L,L,L,L,L,0
+"Wade, 2007",L,L,L,L,L,L,L,0
+"Kasper, 2005",L,L,L,L,L,L,L,0
+"Menza et al, 2009",L,L,L,L,L,L,U,0.5
+"Barbee et al,2011",L,L,L,L,L,L,L,0
+"Vermeiden, 2013",L,L,L,L,L,L,L,0
+"Fava M. et al, 2012",L,L,L,L,U,U,L,1
+"Zarate et al, 2006",L,L,L,L,L,L,L,0
+"DeMartinis,2007",L,L,L,L,L,L,L,0
+"MischoUlon et al, 2015",L,L,L,L,L,L,L,0
+"Liebowitz, 2013",L,L,L,L,L,L,L,0
+"Alvarez, 2012",L,L,L,L,L,L,L,0
+"SambUnaris et al,2014",L,L,L,L,L,L,L,0
+"Feiger, 2009",L,L,L,L,H,L,L,1
+"Montgomery, 2014",L,L,L,L,L,L,L,0
+"Baldwin, 2012",L,L,L,L,H,L,L,1
+"Rapoport et al, 2009",L,L,L,L,L,L,L,0
+"Ashman et al, 2009",L,L,L,L,L,L,L,0
+"Raison et al, 2013",L,L,L,L,L,L,L,0
+"Gommoll, 2014",L,L,L,L,H,L,L,1
+"Gaynor, 2011",L,L,L,L,H,L,L,1
+"Zarate et al, 2013",L,L,L,L,L,L,L,0
+"Witte et al, 2012",L,L,L,L,L,L,L,0
+"Perahia, 2008",L,L,L,L,H,L,L,1
+"Lyoo et al, 2012",L,L,L,L,L,L,L,0
+"Wang, 2014",L,L,L,L,L,L,L,0
+"Wang, 2014",L,L,L,L,H,L,L,1
+"Mahableshwarkar, 2013",L,L,L,L,L,L,L,0
+"Colonna, 2005",L,L,L,L,L,L,L,0
+"McIntyre, 2014",L,L,L,L,L,L,L,0
+"Liebowitz, 2007",L,L,L,L,L,L,L,0
+"Rosso, 2012",L,L,L,L,L,L,L,0
+"Ball, 2014",L,L,L,L,L,L,L,0
+"Sthal et al, 2009",L,L,L,L,H,H,L,2
+"Smith et al, 2013",L,L,L,L,L,L,L,0
+"Kamijima et al, 2013",L,L,L,L,L,L,L,0
+"Akhondzadeh et al, 2009",L,L,L,L,L,L,L,0
+"Blier, 2010",L,L,L,L,L,L,L,0
+"Raisi, 2007",L,L,L,L,L,L,L,0
+"Ibrahim et al, 2012",U,U,L,L,L,L,L,1
+"Kashani et al, 2012",L,L,L,L,L,L,L,0
+"Khan, 2007",U,U,L,L,L,L,L,1
+"MUrray et al, 2005",L,L,L,L,L,L,L,0
+"Abolfazli et al, 2011",L,L,L,L,L,L,L,0
+"Kamijima, 2013",L,L,L,L,H,L,L,1
+"Hewett et al, 2009",L,L,L,L,L,L,L,0
+"Nierenberg et al, 2007",L,L,L,L,L,L,L,0
+"Gaynor, 2011",L,L,L,L,L,L,L,0
+"Abbasi et al, 2012",L,L,L,L,L,L,U,0.5
+"Mohapatra et al, 2005",H,H,H,L,L,L,L,3
+"Herrera-GUzmán et al, 2010",U,U,U,U,H,U,U,4
+" Ranjbar et al, 2013",L,L,L,L,L,L,L,0
+"Ranjbar et al,2014",L,L,L,L,L,L,H,1
+" Zajecka et al, 2010",L,L,L,L,H,L,U,1.5
+"Santos, 2008",L,L,L,L,L,L,L,0
+"Iwata et al, 2013",L,L,L,L,L,L,U,0.5
+"Brecht et al, 2011",L,L,L,L,L,L,U,0.5
+"Brecht et al, 2007",L,L,L,L,H,L,U,1.5
+"Jian-JUn OU et al, 2010",L,L,L,L,L,L,L,0
+Strik et al; 2000,U,U,L,L,L,L,L,1
+Montgomery et al; 2013,L,L,L,L,H,L,U,1.5
+"Mathews,2015",L,L,L,L,H,L,L,1
+"YevtUshenko et al, 2007",L,L,L,L,L,H,L,1
+"Michael Liebowitz, 2010",L,L,L,L,L,L,L,0
+Langworth et al; 2006,L,L,L,L,H,U,U,2
+"Tran et al, 2012",L,L,L,L,H,L,L,1
+"Ehde et al, 2007",,L,L,L,L,L,L,0
+Reeves et al; 2008,L,L,L,L,H,U,U,2
+"Kasper, 2009",L,L,L,L,H,U,U,2
+Liebowitz et al; 2008,L,L,L,L,H,L,U,1.5
+"Boyer et al, 2008",L,L,L,L,L,L,U,0.5
+Bot et al; 2010,U,U,U,U,U,L,U,3
+"Mozaffari-Khosravi, 2012",L,L,L,L,H,L,L,1
+"Hewett et al., 2009",L,L,L,L,L,U,U,1
+"Kornstein, 2006",L,L,L,L,H,U,U,2
+"RUhe, 2008",U,H,H,H,L,L,L,3.5
+"Nations,2015",L,L,L,L,L,L,L,0
+Jefferson et al; 2006,L,L,L,L,H,U,U,2
+El-Khalili et al; 2010,L,L,L,L,H,U,U,2
+"HsU et al, 2011",L,L,L,L,L,U,U,1
+"HagHi et al, 2014",L,L,L,L,L,L,L,0
+"Papakostas, 2010",L,L,L,L,L,L,L,0
+ Seidman et al; 2005,L,L,L,L,U,U,U,1.5
+"Bakish et al, 2014",L,L,L,L,H,U,U,2
+"Madhoo et al, 2014",L,L,L,L,L,L,L,0
+"Trivedi et al, 2006",L,L,H,H,H,L,L,3
+"Otte et al, 2009",L,L,L,L,L,L,L,0
+"Shelton et al, 2005",L,L,L,L,L,U,U,1
+" Carney, 2009",L,L,L,L,L,U,U,1
+"SU, 2003",L,L,L,L,L,U,U,1
+"Lee et al, 2007",L,L,L,L,L,U,L,0.5
+"Akhondzadeh et al, 2012",,L,L,L,L,L,L,0
+"Ravindran et al, 2008",,U,U,U,L,L,U,2
+"Pope et al, 2010",L,L,L,L,L,U,U,1
+"HigUchi, 2011",L,L,L,L,L,U,L,0.5
+"Kimberly, 2008",L,L,L,L,L,L,L,0
+" GrUnebaUm et al, 2011",H,H,H,H,L,L,L,4
+"Kennedy, 2006",L,L,L,L,L,U,L,0.5
+"Wisner, 2006",L,L,L,L,H,U,U,2
+"Moore, 2005",L,L,L,L,L,U,L,0.5
+"McIntyre, 2007",L,L,L,L,H,U,U,2
+"Sarris, 2014",L,L,L,L,H,U,U,2
+"Feiger, 2006",L,L,L,L,L,U,U,1
+"LUstman et al, 2006",L,L,L,L,U,U,U,1.5
+"Kranzler et al, 2006",L,L,L,L,H,U,U,2
+"Kornstein, 2010",L,L,L,L,U,U,U,1.5
+"Abbasi et al, 2015",L,L,L,L,U,U,U,1.5
+"GarL, 2012",H,H,H,H,L,L,U,4.5
+"Soczynska, 2014",L,L,L,L,L,U,U,1
+"MarcUs et al, 2008",L,L,L,L,U,U,U,1.5
+"Koshino, 2013",L,L,L,L,L,U,U,1
+"Asnis, 2013",L,L,L,L,U,U,U,1.5
+"Mowla, 2011",L,L,L,L,L,L,L,0
+"Nickel, 2005",L,L,L,L,U,U,L,1
+"Marianne Gorlyn, 2014",U,U,U,L,L,L,L,1.5
+"Lenox-Smith, 2008",L,L,L,L,L,U,U,1
