@@ -400,6 +400,7 @@ sumtable["P"] <- NA
 sumtable["FS"] <- NA
 sumtable$P <- as.data.frame(effect_size)/colSums(as.data.frame(effect_size))
 sumtable$FS <- effect_size2
+sumtable <- subset(sumtable, sumtable$effect_size > 0)
 
 ####### QUALITY GRAPH ######
 q<-read.csv("/Users/oper/Desktop/Tables Depression_Atrittion - quality_graph.csv")
