@@ -55,7 +55,7 @@ mild <- subset(data, data$severity_b_ig=='mild')
 moderate <- subset(data, data$severity_b_ig=='moderate')
 severe <- subset(data, data$severity_b_ig=='severe')
 
-###### OVERALL
+###### OVERALL ######
 funneldata<-with(moderate,data.frame(attrition_ig, total_sample_ig, Ref., author_year))
 funneldata<-na.omit(funneldata[order(funneldata$author_year),])
 funnelmod<-metaprop(attrition_ig, total_sample_ig, sm='PLN', data=funneldata, studlab=Ref.)
@@ -332,47 +332,74 @@ forest(metasev_meds)
 dev.off()
 
 
-###### NETWORK ANALYSIS AND EFFECT SIZES ######
+###### NETWORK ANALYSIS AND EFFECT SIZES ###### (EXCLUIDA DO ARTIGO)
 #1# ES
-datanet <- read.csv('/Users/oper/Desktop/Tables Depression_Atrittion - depression_SR_attcause.csv.csv')
-datanet2<-lapply(datanet,function(x) car::recode(x,"NA=0"))
-datanet2<-as.data.frame(datanet2)
-data_network<-remove.vars(datanet2,c("Study"))
-data_network<-as.data.frame(data_network)
-effect_size<-colSums(as.data.frame(data_network))
-effect_sizes<-as.matrix(effect_size/dim(as.data.frame(data_network))[1])
-intensity<-length(dim(effect_sizes>=0.25))
-intensity_data<-rowSums(as.data.frame(data_network))
-intensity_sizes<-intensity_data/intensity
-
+#datanet <- read.csv('/Users/oper/Desktop/dep_att/Tables Depression_Atrittion - depression_SR_attcause.csv.csv')
+#datanet2<-lapply(datanet,function(x) car::recode(x,"NA=0"))
+#datanet2<-as.data.frame(datanet2)
+#data_network<-remove.vars(datanet2,c("Study"))
+#data_network<-as.data.frame(data_network)
+#effect_size<-colSums(as.data.frame(data_network))
+#effect_sizes<-as.matrix(effect_size/dim(as.data.frame(data_network))[1])
+#intensity<-length(dim(effect_sizes>=0.25))
+#intensity_data<-rowSums(as.data.frame(data_network))
+#intensity_sizes<-intensity_data/intensity
 #2# NW
-variable_data <- t(as.matrix(data_network)) %*% as.matrix(data_network)
+#variable_data <- t(as.matrix(data_network)) %*% as.matrix(data_network)
 #study_data<-as.matrix(data_network)
 #rownames(study_data)<-datanet$Study
 #network_data<-rbind(variable_data,study_data)
 #network_data <- (as.matrix(network_data)) %*% t(as.matrix(network_data))
-diag(variable_data) <- 0
-names<-c(c("LE","AE","LFU","LAB","WC","TT","SE","DISC", "ID", "O", "RM", "MADRS", "PV", "PD", "SD", "PhD", "NT",
-           "ADM", "ILL", "SC", "PA", "EC", "IN", "IBS", "FTCQ", "IR", "REC", "NMED", "CDOS", "SevD", "HOSP",
-           "CAD", "AP"))
+#diag(variable_data) <- 0
+#names<-c(c("LE","AE","LFU","LAB","WC","TT","SE","DISC", "ID", "O", "RM", "MADRS", "PV", "PD", "SD", "PhD", "NT",
+#           "ADM", "ILL", "SC", "PA", "EC", "IN", "IBS", "FTCQ", "IR", "REC", "NMED", "CDOS", "SevD", "HOSP",
+#           "CAD", "AP"))
 
-variable2<-cor(data_network,method="spearman")
-
-size_edges<-c(effect_sizes[,1]*10)
-#color<-c("red","yellow","lightblue","lightblue","red","red","yellow","yellow",rep("grey",46))
+#variable2<-cor(data_network,method="spearman")
+#size_edges<-c(effect_sizes[,1]*10)
+#color<-c("34 cores")
 #shape<-c(rep("circle",8),rep("square",46)) 
 #label.cex<- c(rep(1.5,8),rep(1.0,46))
 #groups<-c("Ensaio Clínico","Medicamentos","Outras Razões")
 
-network_meta <- qgraph(variable_data ,layout = "spring",minimum=0.2,cut=0.4,label.scale=FALSE,
-                       grey=T,borders=TRUE, vsize=size_edges, labels=names, legend=TRUE, posCol = "gray")
+#network_meta <- qgraph(variable_data ,layout = "spring",minimum=0.2,cut=0.4,label.scale=FALSE,
+#                       grey=T,borders=TRUE, vsize=size_edges, labels=names, legend=TRUE, posCol = "gray")
 
-tiff("/home/joao/Desktop/sporedata_depression_sr_network.tiff", width = 1000, height = 700,compression = 'lzw')
-network_meta <- qgraph(network_data,layout = "spring",minimum=0.5,cut=100,labels=names,label.scale=FALSE,
-                       label.cex = label.cex,vsize=size_edges,shape=shape,grey=T,color=color,borders = FALSE,posCol = "grey")
-legend(0.8,-0.8, bty=".",c("Ensaio Clínico","Medicamentos","Outras Razões"),cex=1.2,fill=c("lightblue","red","yellow"))
+#tiff("/home/joao/Desktop/sporedata_depression_sr_network.tiff", width = 1000, height = 700,compression = 'lzw')
+#network_meta <- qgraph(network_data,layout = "spring",minimum=0.5,cut=100,labels=names,label.scale=FALSE,
+#                       label.cex = label.cex,vsize=size_edges,shape=shape,grey=T,color=color,borders = FALSE,posCol = "grey")
+#legend(0.8,-0.8, bty=".",c("Ensaio Clínico","Medicamentos","Outras Razões"),cex=1.2,fill=c("lightblue","red","yellow"))
 #legend(-1.32,-0.5	, bty="n",c("EA: Efeitos Adversos","OT: Outro Tratamento","ECR: Questões com o ECR","FR: Falha no Retorno","MD: Problemas com medicamentos","ST: Melhora nos Sintomas","QF: Questões Familiares","OU: Outras Razões"),cex=1.2)
-dev.off()
+#dev.off()
+
+###### FREQ SIZE & INTENSITY SIZE ######
+#FS
+data_ef <- read.csv("/Users/oper/Desktop/Tables Depression_Atrittion - depression_SR_attcause.csv.csv")
+data_ef2<-as.data.frame(lapply(data_ef,function(x) car::recode(x,"NA=0")))
+data_ef2$Study <- NULL
+effect_size<-colSums(data_ef2)
+effect_size2<-as.matrix(effect_size/dim(data_ef)[[1]])
+
+
+#IS
+n25 <- as.data.frame(effect_size2)
+n25["ES"] <- NA
+n25$ES <-car::recode(n25$V1,"0:0.249999999 = 'menor'; 0.25:99 = 'maior'")
+n25mais <- subset(n25, n25$ES == 'maior') #5 maiores que .25 (Lack.of.efficacy, adverse.effects, lost.to.follow.up, Withdraw.of.consent, Protocol.violation)
+
+ISdata <- with(data_ef2, data.frame(Lack.of.efficacy, Adverse.effects, Lost.to.follow.up, Withdraw.of.consent, Protocol.violation))
+IS<- rowSums(ISdata)/5
+
+FSIS <- as.data.frame(data_ef$Study)
+FSIS["IS"] <- NA
+FSIS$IS <- IS
+
+# Qual a porcentagem de uma attrition em comparação com todas as outras?
+sumtable <- as.data.frame(effect_size)
+sumtable["P"] <- NA
+sumtable["FS"] <- NA
+sumtable$P <- as.data.frame(effect_size)/colSums(as.data.frame(effect_size))
+sumtable$FS <- effect_size2
 
 ####### QUALITY GRAPH ######
 q<-read.csv("/Users/oper/Desktop/Tables Depression_Atrittion - quality_graph.csv")
